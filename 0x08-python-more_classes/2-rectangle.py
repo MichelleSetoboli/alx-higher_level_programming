@@ -7,9 +7,6 @@ Defines a class Rectangle
 """
 
 
-
-
-
 class Rectangle:
 
     """Representation of a rectangle"""
@@ -22,20 +19,14 @@ class Rectangle:
 
         self.height = height
 
-
-
     @property
-
     def width(self):
 
         """getter for the private instance attribute width"""
 
         return self.__width
 
-
-
     @width.setter
-
     def width(self, value):
 
         """setter for the private instance attribute width"""
@@ -50,20 +41,14 @@ class Rectangle:
 
         self.__width = value
 
-
-
     @property
-
     def height(self):
 
         """getter for the private instance attribute height"""
 
         return self.__height
 
-
-
     @height.setter
-
     def height(self, value):
 
         """setter for the private instance attribute height"""
@@ -78,15 +63,11 @@ class Rectangle:
 
         self.__height = value
 
-
-
     def area(self):
 
         """returns the area of the rectangle"""
 
         return self.__width * self.__height
-
-
 
     def perimeter(self):
 
