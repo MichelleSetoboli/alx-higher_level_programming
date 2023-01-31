@@ -9,12 +9,7 @@ on an nxn grid such that they are all in non-attacking positions
 """
 
 
-
-
-
 from sys import argv
-
-
 
 if __name__ == "__main__":
 
@@ -40,15 +35,11 @@ if __name__ == "__main__":
 
         exit(1)
 
-
-
     # initialize the answer list
 
     for i in range(n):
 
         a.append([i, None])
-
-
 
     def already_exists(y):
 
@@ -61,8 +52,6 @@ if __name__ == "__main__":
                 return True
 
         return False
-
-
 
     def reject(x, y):
 
@@ -84,8 +73,6 @@ if __name__ == "__main__":
 
         return True
 
-
-
     def clear_a(x):
 
         """clears the answers from the point of failure on"""
@@ -93,8 +80,6 @@ if __name__ == "__main__":
         for i in range(x, n):
 
             a[i][1] = None
-
-
 
     def nqueens(x):
 
@@ -115,8 +100,6 @@ if __name__ == "__main__":
                 else:
 
                     nqueens(x + 1)  # moves on to next x value to continue
-
-
 
     # start the recursive process at x = 0
 

@@ -19,8 +19,6 @@ class Rectangle:
 
         self.height = height
 
-
-
     def __del__(self):
 
         """prints a string when an instance has been deleted"""
